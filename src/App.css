@@ -84,14 +84,13 @@ h6 {
  
 }
 
-/* Balance */
 .balance {
   color: green;
   display: flex;
   justify-content: center;
 }
 
-/* ExpenseStatus */
+
 .ex-status {
   display: flex;
   justify-content: center;
@@ -104,12 +103,10 @@ h6 {
   display: inline-block;
 }
 
-/* New Transaction */
 
 select,
 input[type="text"] {
-  /* background-color: black; */
-
+ 
   width: 100%;
   padding: 12px 20px;
   margin: 4px 0;
@@ -158,7 +155,7 @@ input[type="text"] {
   cursor: pointer;
 }
 
-/* Transaction */
+
 
 .transaction {
   display: flex;
@@ -173,7 +170,6 @@ input[type="text"] {
 
 }
 
-/* Display Transactions */
 
 .display-items {
   display: flex;
