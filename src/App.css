@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+body {
+  background: var(--Background, #222626);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: lightseagreen;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-around;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+}
+
+@media (max-width: 800rem) {
+  .title {
+    display: flex;
+    display: row;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading {
+  justify-content: center;
+  color: rgb(13, 8, 1);
+  display: flex;
+}
+
+.transaction-heading {
+  justify-content: center;
+  color: rgb(13, 8, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.transactions-head {
+  justify-content: center;
+  color: rgb(13, 8, 1);
+  display: flex;
+}
+
+
+
+.content-part1 {
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: rgb(236, 235, 225);
+  padding: 2%;
+  border-radius: 3%;
+  width: 30%;
+}
+
+.content-part2 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: rgb(236, 235, 225);
+  padding: 2%;
+  border-radius: 3%;
+  width: 30%;
+
+ 
+}
+
+/* Balance */
+.balance {
+  color: green;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ExpenseStatus */
+.ex-status {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ex-status>div {
+  padding: 1%;
+
+  display: inline-block;
 }
+
+/* New Transaction */
+
+select,
+input[type="text"] {
+  /* background-color: black; */
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-width: 0;
+  border-bottom: 2px solid black;
+}
+
+.newtransaction {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.number-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-width: 0;
+  border-bottom: 2px solid black;
+}
+
+
+
+.transaction-button {
+  padding: 1%;
+  margin: 4px 0;
+
+  border: none;
+
+  background-color: royalblue;
+  font-size: large;
+
+
+}
+
+.transaction-button:hover {
+  background-color: rgb(28, 140, 184);
+  cursor: pointer;
+}
+
+/* Transaction */
+
+.transaction {
+  display: flex;
+
+
+  flex-direction: column;
+
+  background-color: rgb(236, 235, 225);
+  padding: 3%;
+  border-radius: 3%;
+  
+
+}
+
+/* Display Transactions */
+
+.display-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  width: 100%;
+  margin-left: 2%;
+  padding-inline-start: 0%;
+}
+
+.delete-button {
+  margin: 20px 0;
+  border-radius: 5%;
+  border: 2%;
+  display: inline;
+
+  
+}
+
+.delete-button:hover {
+  background-color: rgb(230, 9, 31);
+  cursor: pointer;
+}
+
